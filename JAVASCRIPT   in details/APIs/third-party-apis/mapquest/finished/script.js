@@ -9,7 +9,7 @@ const map = L.mapquest.map('map', {
 });
 
 // 2. Add control
-map.addControl(L.mapquest.control());
+map.addControl(L.mapquest.control()); 
 
 // 3. Add icon
 L.marker([53.480759, -2.242631], {
