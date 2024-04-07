@@ -4,35 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Object-oriented JavaScript inheritance</title>
-  </head>
+  </head>  
 
   <body>
-
+ 
   </body>
 
     <script>
 
-    // Basic Person class
+    // Basic Person class 
 
     class Person {
-      constructor(first, last, age, gender, interests) {
+      constructor(first, last, age, gender, interests) { 
         this.name = {
           first,
           last
         };
-        this.age = age;
+        this.age = age;  
         this.gender = gender;
         this.interests = interests;
       }
 
       greeting() {
         console.log(`Hi! I'm ${this.name.first}`);
-      };
+      }; 
 
       farewell() {
         console.log(`${this.name.first} has left the building. Bye for now!`);
       };
-    }
+    } 
 
     // Instantiate Person
 
@@ -46,7 +46,7 @@
 
     // Extend Person with Teacher
 
-    class Teacher extends Person {
+    class Teacher extends Person { 
       constructor(first, last, age, gender, interests, subject, grade) {
         super(first, last, age, gender, interests);
 
@@ -54,12 +54,12 @@
         this.subject = subject;
         this.grade = grade;
       }
-    }
+    } 
 
     // Instantiate Teacher
 
     let snape = new Teacher('Severus', 'Snape', 58, 'male', ['Potions'], 'Dark arts', 5);
-    snape.greeting(); // Hi! I'm Severus.
+    snape.greeting(); // Hi! I'm Severus. 
     snape.farewell(); // Severus has left the building. Bye for now.
     console.log(snape.age) // 58
     console.log(snape.subject) // Dark arts
