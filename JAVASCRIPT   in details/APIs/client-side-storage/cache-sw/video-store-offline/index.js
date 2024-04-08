@@ -2,17 +2,17 @@
 const section = document.querySelector('section');
 const videos = [
   { 'name' : 'crystal' },
-  { 'name' : 'elf' },
+  { 'name' : 'elf' }, 
   { 'name' : 'frog' },
   { 'name' : 'monster' },
   { 'name' : 'pig' },
-  { 'name' : 'rabbit' }
+  { 'name' : 'rabbit' } 
 ];
 // Create an instance of a db object for us to store our database in
-let db;
+let db; 
 
-function init() {
-  // Loop through the video names one by one
+function init() { 
+  // Loop through the video names one by one 
   for(const video of videos) {
     // Open transaction, get object store, and get() each video by name
     const objectStore = db.transaction('videos_os').objectStore('videos_os');
