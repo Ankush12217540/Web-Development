@@ -1,26 +1,26 @@
 // Create needed constants
-const list = document.querySelector('ul');
+const list = document.querySelector('ul'); 
 const titleInput = document.querySelector('#title');
-const bodyInput = document.querySelector('#body');
+const bodyInput = document.querySelector('#body'); 
 const form = document.querySelector('form');
-const submitBtn = document.querySelector('form button');
-
+const submitBtn = document.querySelector('form button'); 
+ 
 // Create an instance of a db object for us to store the open database in
-let db;
+let db; 
 
 // Open our database; it is created if it doesn't already exist
 // (see the upgradeneeded handler below)
-const openRequest = window.indexedDB.open('notes_db', 1);
+const openRequest = window.indexedDB.open('notes_db', 1); 
 
-// error handler signifies that the database didn't open successfully
-openRequest.addEventListener('error', () => console.error('Database failed to open'));
+// error handler signifies that the database didn't open successfully 
+openRequest.addEventListener('error', () => console.error('Database  failed to open'));
 
-// success handler signifies that the database opened successfully
-openRequest.addEventListener('success', () => {
+// success handler signifies that the database opened successfully 
+openRequest.addEventListener('success', () => { 
   console.log('Database opened successfully');
-
+ 
   // Store the opened database object in the db variable. This is used a lot below
-  db = openRequest.result;
+  db = openRequest.result; 
 
   // Run the displayData() function to display the notes already in the IDB
   displayData();
