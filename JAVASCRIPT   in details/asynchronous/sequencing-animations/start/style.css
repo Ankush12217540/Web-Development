@@ -1,10 +1,10 @@
-body {
+body { 
   background: #6c373f; 
   display: flex; 
   justify-content: center;
   } 
  
- #alice-container {
+  #alice-container {
    width: 90vh;
    display: grid;
    place-items: center; 
@@ -13,7 +13,7 @@ body {
      ". a2 ." 
      ". . a3"; 
 }  
- 
+  
   #alice1 {
     grid-area: a1;
 }  
