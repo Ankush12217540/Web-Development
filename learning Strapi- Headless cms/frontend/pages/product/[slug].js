@@ -6,7 +6,7 @@ const Slug = ({product, addToCart}) => {
     const router = useRouter()
     const { slug } = router.query 
     
-    return (
+    return ( 
         <div>
             <section className="text-gray-600 body-font overflow-hidden">
   <div className="container px-5 py-24 mx-auto">
